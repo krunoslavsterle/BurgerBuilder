@@ -1,10 +1,12 @@
-import React, { Fragment } from "react";
+import React from "react";
+
+import Auxiliary from "../../hoc/Auxiliary";
 
 const layout = props => (
-  <Fragment>
+  <Auxiliary>
     <div>Toolbar, SideDrawer, Backdrop</div>
     <main>{props.children}</main>
-  </Fragment>
+  </Auxiliary>
 );
 
 export default layout;
